@@ -1,0 +1,48 @@
+/* This file will load automatically if it is in /assets/ folder
+Below code is only for inbuilt css applied to all LOADING component You dont need to implement dcc.Loading() compoenent if written this.
+Referance of code:https://dash.plotly.com/loading-states 
+*/
+
+*[data-dash-is-loading="true"]{
+    visibility: hidden;
+}
+*[data-dash-is-loading="true"]::before{
+    content: "Loading...";
+    display: inline-block;
+    color: yellow;
+    visibility: visible;
+}
+
+/* Fix the font size and other stuff of datepicker*/
+.DateInput_input, .DateInput_input_1 {
+    /* my personal stuff  color: #000000;font-size: 0.9375rem; font-weight: 400;
+    https://github.com/tcbegley/dash-bootstrap-css/issues/7
+      */
+   
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    height: 35px;
+  }
+
+
+
+  .DateRangePickerInput_arrow_svg, .DateRangePickerInput_arrow_svg_1 {
+    Height: 10px !important;
+    Width: 10px !important;
+  }
+
+
+  .All-label-text{
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .All-dropdown-text{
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+  }
